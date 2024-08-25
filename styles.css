@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 #body-header {
     height: 65vh;
     opacity: 0.8;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-image: url(images/bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -105,7 +105,7 @@ body::-webkit-scrollbar {
     font-size: 3rem;
     letter-spacing: 0.1rem;
     color: white;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
@@ -356,16 +356,7 @@ section:nth-child(2n + 1) {
     height: 100%;
 }
 
-.portfolio-details {
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    color: transparent;
-    text-align: center;
-    padding: 10px;
-}
+
 
 .portfolio-image-container:hover {
     box-shadow: 0 0 20px #74ADC8;
@@ -627,4 +618,128 @@ button:focus {
     }
 
 }
+/* ... existing CSS ... */
+
+.about-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Example styles for other elements */
+#my-name {
+    font-size: 36px;
+    color: #444;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.skill-name {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ... existing CSS ... */
+/* Add this to your existing styles.css file */
+
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.portfolio-image-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio-details p {
+    margin: 10px 0;
+}
+
+.portfolio-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.portfolio-details a:hover {
+    background-color: #0056b3;
+}
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between portfolio items */
+}
+
+.portfolio-item {
+    width: 300px; /* Adjust based on your design */
+    border: 1px solid #ccc; /* Optional: to separate items visually */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for better look */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center-aligns text for a clean look */
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: auto; /* Ensures the image scales correctly */
+    display: block;
+    margin-bottom: 10px; /* Space between image and description */
+}
+
+.portfolio-details {
+    margin-top: 10px; /* Space between image and description */
+}
+
+.portfolio-details p {
+    font-size: 14px;
+    color: #555; /* Darker color for readability */
+    margin: 0; /* Removes extra spacing */
+}
+
 
