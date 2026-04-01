@@ -1,545 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mona</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mona Kumari — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header id="body-header">
-        <nav>
-            
-            <div class = "dropdown-menu text-right">
-                <div class="bars">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class ="dropdown-list nav-menu">
-                    <ul class = "no-list-style">
-                        <li >
-                            <a href="#"> Home </a>
-                        </li>
-                        <li>
-                            <a href="#about"> About </a>
-                        </li>
-                        <li>
-                            <a href="#skills"> Skills </a>
-                        </li>
-                        <li>
-                            <a href="#experience">Experience</a>
-                        </li>
-                        <li>
-                            <a href="#education">Education</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    </div>
+<!-- ===== TOP NAV (sticky, separate from hero) ===== -->
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="#hero" class="topnav-name">Mona Kumari</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-             </div>   
+<!-- ===== HERO (light, left-aligned, split layout) ===== -->
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-left">
+      <p class="hero-tag">AI Engineer · Medical Computer Vision</p>
+      <h1>Mona Kumari</h1>
+      <p class="hero-desc">Building deep learning models for digital pathology at <strong>AiraMatrix</strong> — cell-level anomaly detection, inference optimization, and generative modeling on whole slide images. M.Tech from <strong>ISI Kolkata</strong>.</p>
+      <div class="hero-links">
+        <a href="#contact" class="cta-fill">Get in Touch</a>
+        <a href="https://www.linkedin.com/in/jha-mona/" target="_blank" rel="noopener noreferrer" class="cta-ghost"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <a href="https://github.com/mona-jha" target="_blank" rel="noopener noreferrer" class="cta-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric"><span class="metric-val">4+</span><span class="metric-lbl">Years Experience</span></div>
+        <div class="metric-divider"></div>
+        <div class="metric"><span class="metric-val">99.9%</span><span class="metric-lbl">GATE CS Percentile</span></div>
+        <div class="metric-divider"></div>
+        <div class="metric"><span class="metric-val">19%</span><span class="metric-lbl">Inference Speedup</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <ul class="no-list-style horizontal-list text-center nav-menu">
-                <li>
-                    <a href="#"> Home </a>
-                </li>
-                <li>
-                    <a href="#about"> About </a>
-                </li>
-                <li>
-                    <a href="#skills"> Skills </a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+<!-- ===== ABOUT (single column, left accent border) ===== -->
+<section id="about" class="sec">
+  <div class="wrap">
+    <h2 class="sec-title">About</h2>
+    <div class="about-block">
+      <p>I am an <strong>AI Engineer at AiraMatrix</strong>, building deep learning models for digital pathology. My work focuses on cell-level anomaly detection in bone marrow whole slide images, inference optimization, and generative modeling using diffusion models and GANs.</p>
+      <p>I hold an <strong>M.Tech in Computer Science</strong> (Data Science) from the <strong>Indian Statistical Institute (ISI), Kolkata</strong>. My dissertation focused on multimodal fake video detection using CLIP, GATv2, Wav2Vec2, and BiLSTM, achieving 94.2% accuracy on benchmark datasets.</p>
+      <p>Previously I improved Hindi speech recognition at <strong>Stormlight SLS</strong> using Whisper fine-tuning with LoRA/PEFT, and spent 3+ years as a Software Developer at <strong>Nirnaya System &amp; Solutions</strong> building Django web applications. I cleared GATE CS 2023 with 99.9 percentile while working full-time.</p>
+    </div>
+  </div>
+</section>
 
-        </nav>
+<!-- ===== EXPERIENCE (flat cards with left accent, no timeline) ===== -->
+<section id="experience" class="sec sec-gray">
+  <div class="wrap">
+    <h2 class="sec-title">Experience</h2>
 
-        <div id="name-social-container">
-            <div class="text-center">
-                <h1 id="my-name" style="visibility: visible;">I am Mona</h1>
-
-            </div>
-            <div>
-                <ul class="no-list-style horizontal-list text-center social-icons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/mona-j-44a617103/">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-quora"></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>AI Engineer</h3>
+          <span class="job-co">AiraMatrix · Thane, Mumbai</span>
         </div>
+        <time>Jul 2025 — Present</time>
+      </div>
+      <ul>
+        <li>Led design and deployment of cell-level anomaly detection pipelines for high-resolution histopathology images (Whole Slide Images), enabling automated screening of bone marrow samples across 3 diagnostic workflows.</li>
+        <li>Optimized inference pipelines by profiling GPU bottlenecks and batching tile predictions, reducing slide-level processing time from ~16 min to ~13 min (19% faster) while maintaining diagnostic accuracy.</li>
+        <li>Spearheaded training of SSL-based feature extractors (ViT, VAE) on 50K+ unlabeled pathology tiles, improving downstream classification F1 by 8% under limited labeled data.</li>
+        <li>Collaborated with pathologists and a cross-functional team of 5 to fine-tune classification networks; conducted systematic error analysis, achieving ~5% reduction in false negatives for critical cell abnormalities.</li>
+        <li>Architecting diffusion and GAN-based generative models to reconstruct degraded histopathology regions, targeting 30% improvement in image quality metrics (SSIM/PSNR).</li>
+        <li>Documented model architectures and experiment results in internal wiki, enabling knowledge transfer across a 5-member engineering team.</li>
+      </ul>
+      <div class="tags">
+        <span>PyTorch</span><span>Computer Vision</span><span>ViT</span><span>SSL</span><span>Diffusion</span><span>GAN</span><span>WSI</span>
+      </div>
+    </article>
 
-    </header>
-    <main>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>ML Audio Intern</h3>
+          <span class="job-co">Stormlight SLS · Delhi</span>
+        </div>
+        <time>May 2024 — Jul 2024</time>
+      </div>
+      <ul>
+        <li>Reduced Hindi speech recognition WER from 15-20% to 14-17% by fine-tuning OpenAI Whisper large-v3 with LoRA/PEFT on a custom 30-hour Hindi audio dataset curated from 200+ speakers.</li>
+        <li>Owned end-to-end data pipeline — audio collection, noise filtering, augmentation, and evaluation — and presented weekly progress reports to the founding team.</li>
+      </ul>
+      <div class="tags">
+        <span>Whisper</span><span>LoRA/PEFT</span><span>HuggingFace</span><span>ASR</span>
+      </div>
+    </article>
 
-        <section id="about">
-            <div id="my-image">
-                <img src="images/2.png">
-            </div>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Software Developer</h3>
+          <span class="job-co">Nirnaya System &amp; Solutions · Delhi</span>
+        </div>
+        <time>Mar 2020 — Jun 2023</time>
+      </div>
+      <ul>
+        <li>Built and scaled Django web applications serving 50,000+ monthly users; improved page load speed by 30% through Redis caching, query optimization, and database indexing.</li>
+        <li>Designed CI/CD pipelines using Docker and GitHub Actions, reducing deployment cycle from 30 min to under 10 min.</li>
+        <li>Led A/B testing initiative across a 3-member team, driving 15% increase in sign-ups and 10% boost in retention.</li>
+        <li>Mentored 2 junior developers on Git workflows, code reviews, and deployment best practices.</li>
+      </ul>
+      <div class="tags">
+        <span>Django</span><span>Docker</span><span>SQL</span><span>Redis</span><span>CI/CD</span><span>REST APIs</span>
+      </div>
+    </article>
+  </div>
+</section>
 
-            <div id="about-para">
+<!-- ===== EDUCATION (horizontal minimal with left accent) ===== -->
+<section id="education" class="sec">
+  <div class="wrap">
+    <h2 class="sec-title">Education</h2>
 
-                <p>
-                    
+    <div class="edu-row">
+      <div class="edu-entry">
+        <h3>M.Tech in Computer Science</h3>
+        <span class="edu-inst">Indian Statistical Institute, Kolkata</span>
+        <time>Jul 2023 — Jun 2025</time>
+        <p>Specialization: Data Science. Dissertation: Multimodal Fake Video Detection — CLIP, GATv2, BiLSTM pipeline achieving 94.2% accuracy. Coursework: ML, DL, NLP, Probability &amp; Statistics, DSA.</p>
+        <div class="tags"><span>GATE CS 99.9%ile</span><span>Data Science</span></div>
+      </div>
+      <div class="edu-entry">
+        <h3>Bachelor of Technology</h3>
+        <span class="edu-inst">OUAT</span>
+        <time>Jul 2014 — Jun 2018</time>
+        <p>1st Prize, National Hackathon — Confederation of Indian Industry (CII), Chandigarh, 2016.</p>
+        <div class="tags"><span>CII Hackathon 1st Prize</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    <p>
-                        <p class="about-paragraph">
-                            I am Mona Kumari, an M.Tech student specializing in Computer Science at the Indian Statistical Institute (ISI), Kolkata. My academic focus lies in the rapidly evolving fields of Machine Learning, Deep Learning, and Generative AI. I am passionate about leveraging advanced technologies to solve complex problems and create innovative solutions.
-                        </p>
+<!-- ===== SKILLS (flowing inline tags, not card grid) ===== -->
+<section id="skills" class="sec sec-gray">
+  <div class="wrap">
+    <h2 class="sec-title">Skills</h2>
 
-                        <p class="about-paragraph">
-                            During my recent summer internship, I had the opportunity to work in the audio data domain, where I utilized tools such as PyTorch, Librosa, and Hugging Face to develop and fine-tune machine learning models. This experience not only enhanced my technical skills but also deepened my understanding of how AI can be applied to real-world data.
-                        </p>
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="tags"><span>Python</span><span>C/C++</span><span>SQL</span></div>
+    </div>
+    <div class="skill-group">
+      <h4>ML Frameworks</h4>
+      <div class="tags"><span>PyTorch</span><span>HuggingFace Transformers</span><span>scikit-learn</span><span>XGBoost</span><span>Pandas</span><span>NumPy</span></div>
+    </div>
+    <div class="skill-group">
+      <h4>Computer Vision</h4>
+      <div class="tags"><span>ViT</span><span>VAE</span><span>SSL</span><span>Medical Imaging (WSIs)</span><span>Diffusion</span><span>GANs</span><span>UNet</span><span>OCR</span></div>
+    </div>
+    <div class="skill-group">
+      <h4>Multimodal &amp; Speech</h4>
+      <div class="tags"><span>CLIP</span><span>BERT</span><span>Wav2Vec2</span><span>Whisper</span><span>GATv2</span><span>BiLSTM</span><span>LoRA/PEFT</span></div>
+    </div>
+    <div class="skill-group">
+      <h4>Backend</h4>
+      <div class="tags"><span>Django</span><span>Streamlit</span><span>REST APIs</span></div>
+    </div>
+    <div class="skill-group">
+      <h4>DevOps &amp; Tools</h4>
+      <div class="tags"><span>Docker</span><span>Git</span><span>GitHub Actions (CI/CD)</span><span>Linux</span></div>
+    </div>
+  </div>
+</section>
 
-                        <p class="about-paragraph">
-                            Prior to my M.Tech, I worked as a software developer, primarily focusing on backend development using the Django framework. This role equipped me with a strong foundation in web development and API integration, skills that I continue to build upon in my current studies.
-                        </p>
+<!-- ===== PROJECTS (wide horizontal cards, not 3-col grid) ===== -->
+<section id="projects" class="sec">
+  <div class="wrap">
+    <h2 class="sec-title">Projects</h2>
 
-                        <p class="about-paragraph">
-                            I'm excited about advancements in data science, such as Transformer models and explainable AI, which enable more transparent and trustworthy models. I'm eager to explore these technologies and contribute to impactful projects.
-                        </p>
+    <article class="proj">
+      <div class="proj-head">
+        <span class="proj-label">M.Tech Dissertation</span>
+        <h3>Multimodal Fake Video Detection</h3>
+      </div>
+      <p>Built a multimodal pipeline combining visual (CLIP), audio (Wav2Vec2), textual (BERT+OCR), and narrative propagation (GATv2) features for fake video detection. Achieved 94.2% per-class accuracy on FakeAVCeleb and FakeTT benchmarks, with 35% relative F1 improvement from narrative graph modeling.</p>
+      <div class="tags"><span>PyTorch</span><span>CLIP</span><span>GATv2</span><span>Wav2Vec2</span><span>BERT</span><span>BiLSTM</span></div>
+    </article>
 
-            </div>
+    <article class="proj">
+      <div class="proj-head">
+        <span class="proj-label">Medical Imaging</span>
+        <h3><a href="https://github.com/mona-jha/brain-mri-segmentation.git" target="_blank" rel="noopener noreferrer">Brain MRI Segmentation <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.6em;"></i></a></h3>
+      </div>
+      <p>Minimal-path extraction using Fast-Marching algorithm for brain structure boundaries. Built and trained a UNet model with PyTorch for accurate brain MRI segmentation.</p>
+      <div class="tags"><span>PyTorch</span><span>UNet</span><span>Fast-Marching</span></div>
+    </article>
 
-        </section>
+    <article class="proj">
+      <div class="proj-head">
+        <span class="proj-label">ML Application</span>
+        <h3><a href="https://mona-jha.github.io/real-estate" target="_blank" rel="noopener noreferrer">Real Estate Analytics <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.6em;"></i></a></h3>
+      </div>
+      <p>Price prediction system for diverse property types using XGBoost. Interactive analytics dashboard for real estate market insights. Recommendation system for optimal property investments based on user preferences.</p>
+      <div class="tags"><span>XGBoost</span><span>FastAPI</span><span>Python</span></div>
+    </article>
+  </div>
+</section>
 
+<!-- ===== CONTACT (clean, light — not dark gradient) ===== -->
+<section id="contact" class="sec sec-gray">
+  <div class="wrap contact-wrap">
+    <h2 class="sec-title">Get in Touch</h2>
+    <p class="contact-note">Open to AI/ML roles in medical imaging, computer vision, and multimodal deep learning.</p>
+    <div class="contact-row">
+      <a href="https://www.linkedin.com/in/jha-mona/" target="_blank" rel="noopener noreferrer" class="cta-fill"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://github.com/mona-jha" target="_blank" rel="noopener noreferrer" class="cta-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</section>
 
+<footer>
+  <p>&copy; 2026 Mona Kumari</p>
+</footer>
+</section>
 
-        <section id="skills">
-            <h1 class="section-heading mb75px ">
-                <span>
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </span>
-                <span> SKILLS </span>
-            </h1>
+<!-- Back to top -->
+<a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
-            <div class="skills-display">
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-orange">
-                        <div class="skill-name">
-                            <span> ML </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-red">
-
-                        <div class="skill-name">
-                            <span> NLP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-blue">
-                        <div class="skill-name">
-                            <span> Deep Learning </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-teal">
-                        <div class="skill-name">
-                            <span> Pytorch </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-blue">
-                        <div class="skill-name">
-                            <span> TensorFlow </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-orange">
-                        <div class="skill-name">
-                            <span> LLM</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-blue">
-                        <div class="skill-name">
-                            <span> C++ </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-five-percent mb-orange">
-                        <div class="skill-name">
-                            <span> HTML </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-light-purple">
-                        <div class="skill-name">
-                            <span> CSS </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="seventy-six-percent mb-teal">
-                        <div class="skill-name">
-                            <span> Javascript </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="fifty-percent mb-blue">
-                        <div class="skill-name">
-                            <span> NodeJs </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-light-purple">
-                        <div class="skill-name">
-                            <span> MongoDB </span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="experience">
-
-            <h1 class="section-heading mb75px">
-                <span>
-                    <i class="fas fa-briefcase"></i>
-                </span>
-                <span> Work Experience </span>
-            </h1>
-
-            <div class="timeline">
-                <div class="timeline-box ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="images/audio.png">
-                        </div>
-                        <h3 class="experience-designation  m0 m-blue"> ML Audio Intern </h3>
-                        <h4 class="experience-company-name"> Stormlight Synergies Pvt Ltd. (SLS) </h4>
-                        <h5 class="experience-duration m0"> May 2024 - July 2024 </h5>
-
-                        <p class="experience-description text-justify"> ˆ 
-Enhanced Hindi speech recognitionperformance by reducing Word Error Rate (WER) by 10%
- using advanced ne-tuning techniques and a custom-built audio dataset for optimal performance
- ˆ 
-Created a 30-hour Hindi audio dataset with transcriptions to train and ne-tune the OpenAI Whisper
- large v3 model, improving its speech-to-text accuracy across diverse accents, dialects, and noise
- conditions in real-world environments.
- ˆ 
-Applied LoRA (Low-Rank Adaptation) and PEFT (Parameter-E cient Fine-Tuning), optimizing key
- hyperparameters and leveraging GPU acceleration to maximize model performance, minimize training
- time, and resource utilization.
- ˆ 
-Reduced WER from 15-20% to 14-17%, signi cantly enhancing Hindi speech recognition in diverse
- real-world conditions
-                     </ul>   </p>
-                    </div>
-                </div>
-
-                <div class="timeline-box ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="images/developer.png">
-                        </div>
-                        <h3 class="experience-designation  m0 m-blue">  Developer </h3>
-                        <h4 class="experience-company-name"> Nirnaya System & Solutions Pvt Ltd. (NSSPL) </h4>
-                        <h5 class="experience-duration m0"> March 2020 - April 2023 </h5>
-
-                        <p class="experience-description text-justify"> 
-                            Developed and deployed Django web applications , ensuring scalability and performance.
- ˆ 
-Conducted A/B testing to analyze user behavior, optimize UI/UX, and improve conversion rates.
- ˆ 
-Implemented CI/CD pipelines using Docker, Git, automating testing and deployments.
- ˆ 
-Optimized backend performance by re ning database queries and improving API response times.
- ˆ 
-Collaborated with designers and product teams to translate business requirements into functional
- features. </p>
-                    </div>
-                </div>
-                
-                <div class="timeline-box right ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="images/1.png">
-                        </div>
-                        <h3 class="experience-designation  m0 m-blue"> Team Lead</h3>
-                        <h4 class="experience-company-name"> Datord pvt Ltd </h4>
-                        <h5 class="experience-duration m0"> June 2018- Feb 2020 </h5>
-                        <p class="experience-description text-justify"> 
-                            Designed and built interactive Tableau dashboards, tracking sales, customer behavior, and market
- trends to drive strategic decisions.
- ˆ 
-Conducted data-driven market research and competitor analysis, identifying growth opportunities and
- optimizing pricing and marketing strategies.
- ˆ 
-Analyzed customer feedback from surveys and focus groups, leading to product enhancements and
- improved user engagement.
- ˆ 
-Automated data collection, reporting, and trend analysis, reducing manual e ort and enabling
- real-time business insights.
- ˆ 
-Collaborated with product and marketing teams, using data to re ne customer acquisition,
- retention, and revenue growth strategies.
- ˆ 
-Skills: Data Analysis, Tableau, Data Automation , Customer Insights
-                        </p>
-                    </div>
-                </div>
-
-               
-                <div id="timeline-divider">
-                    <div class="timeline-traveller">
-                        <div>
-                            <i class="fas fa-plane"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="education">
-
-            <h1 class="section-heading mb75px">
-                <span>
-                    <i class="fas fa-graduation-cap"></i>
-                </span>
-                <span> Education </span>
-            </h1>
-
-            <div class="timeline">
-
-                <div class="timeline-box left ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="images/download.jpeg">
-                        </div>
-                        <h3 class="experience-designation  m0 m-blue"> M.Tech-CS </h3>
-                        <h4 class="experience-company-name "> Indian Statistical Institute, Kolkata </h4>
-                        <h5 class="experience-duration m0"> July 2023 - June 2025 </h5>
-
-                        <p class="experience-description text-justify">
-                            Major coursework includes Machine Learning, Deep Learning, Natural Language Processing, Probability and Statistics, Data Structures and Algorithms, and Information Retrieval.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="timeline-box right ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="images/download.jpeg">
-                        </div>
-                        <h3 class="experience-designation  m0 m-blue"> B.Tech with Honors</h3>
-                        <h4 class="experience-company-name "> Orissa Univercity of Agriculture and Technology </h4>
-                        <h5 class="experience-duration m0">  </h5>
-                        <p class="experience-description text-justify">
-                            Major coursework includes Agricultural Informatics, Precision Agriculture, Geographic Information Systems (GIS), Remote Sensing and Data Analysis in Agriculture.
-                        </p>
-                    </div>
-                </div>
-                
-                <div id="timeline-divider">
-                    <div class="timeline-traveller">
-                        <div>
-                            <i class="fas fa-car-side"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="portfolio">
-            <h1 class="section-heading mb75px">
-                <span>
-                    <i class="fas fa-th-list"></i>
-                </span>
-                <span> Projects </span>
-            </h1>
-
-            <div id="portfolio-container">
-                <div class="portfolio-item">
-                    <a href="https://github.com/mona-jha/brain-mri-segmentation.git" target="_blank">
-                        <h3>Brain MRI Segmentation</h3>
-                        <div class="portfolio-image-container">
-                            <img src="images/audio.png" alt="Brain MRI Segmentation">
-                        </div>
-                    </a>
-                    <div class="portfolio-details">
-                        <p>The project included two main methods:</p>
-                        <ul>
-                            <li><strong>Minimal-path extraction using Fast-Marching algorithm:</strong> Created a method to extract minimal paths efficiently using the Fast-Marching algorithm and documented the process in a tutorial.</li>
-                            <li><strong>Deep-learning UNet model:</strong> Built and trained a UNet model with PyTorch for accurate brain MRI segmentation.</li>
-                        </ul></div>
-                </div>
-            
-                <div class="portfolio-item">
-                    <a href="https://mona-jha.github.io/real-estate" target="_blank">
-                        <h3>Real Estate Analytics</h3>
-                        <div class="portfolio-image-container">
-                            <img src="images/1.png" alt="Real Estate Analytics">
-                        </div>
-                    </a>
-                    <div class="portfolio-details">
-                        <p><strong>XGBoost, FastAPI, Python</strong></p>
-            <ul>
-                <li><strong>Price Prediction System:</strong> Engineered a robust system to forecast prices for diverse property types, such as Flats and Houses based on customer choices.</li>
-                <li><strong>Analytics Dashboard:</strong> Designed an interactive analytics dashboard to deliver actionable insights into the real estate market for specific cities or localities across India.</li>
-                <li><strong>Recommendation System:</strong> Developed recommendation models to suggest optimal property investments based on user preferences.</li>
-            </ul> </div>
-                </div>
-            
-                <div class="portfolio-item">
-                    <a href="https://github.com/mona-jha/Customer-segmentation-using-K-Means" target="_blank">
-                        <h3>Customer Segmentation</h3>
-                        <div class="portfolio-image-container">
-                            <img src="images/customer.png" alt="Customer Segmentation">
-                        </div>
-                    </a>
-                    <div class="portfolio-details">
-                        <p><strong>K-Means, Python, Scikit-learn</strong></p>
-        <ul>
-            <li><strong>Customer Behavior Analysis:</strong> Applied K-Means clustering to identify distinct customer segments based on spending patterns, purchase history, and demographic data.</li>
-            <li><strong>Data Preprocessing:</strong> Cleaned and normalized the data to ensure accurate clustering results, including handling missing values and outliers.</li>
-            <li><strong>Visualization:</strong> Developed clear and informative visualizations to interpret and present the clusters, allowing for actionable insights into customer behavior.</li>
-            <li><strong>Business Applications:</strong> The results of this segmentation can be used to tailor marketing strategies, improve customer engagement, and optimize resource allocation.</li>
-        </ul></div>
-                </div>
-            </div>
-            
-        </section>
-
-        <section id="contact">
-            <h1 class="section-heading mb50px">
-                <span>
-                    <i class="far fa-address-card"></i>
-                </span>
-                <span> Contact </span>
-            </h1>
-            <div id="contact-container">
-
-                <div id="contact-form-container">
-                    <form id="contact-form" action="send_mail.php" method="GET">
-                        <input id="input-name" name="name" type="text" placeholder="Your Name">
-                        <input id="input-email" name="email" type="email" required placeholder="Your Email">
-                        <textarea id="input-message" name="message" rows="2" cols=40 placeholder="Message"></textarea>
-                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
-                    </form>
-                </div>
-                <div id="my-details-container">
-
-                    <h3>  
-                    <p> "Technology is best when it brings people together." - Matt Mullenweg </p>
-                </h3>
-                    <h3> My Address </h3>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Delhi, India</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>9999999999</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="far fa-envelope"></i>
-                        <span>mona.2010kumari@gmail.com</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center social-icons">
-
-                <ul class="no-list-style horizontal-list">
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/manisha-khattar-b5663641/">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://stackoverflow.com/users/5608414/manisha?tab=profile" target="_blank">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.facebook.com/manishakhattar54">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
-                            <i class="fab fa-quora"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
+<script src="script.js"></script>
 </body>
 </html>
